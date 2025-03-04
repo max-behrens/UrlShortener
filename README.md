@@ -87,7 +87,7 @@ Invoke-WebRequest -Uri "http://localhost:8000/encode" `
   -Body '{"url":"https://www.example.com/very/long"}'
 ```
 
-**This will return:**
+**Along with the HTTP response, we will return:**
 ```json
 {
   "original_url":"https://www.example.com/very/long",
@@ -102,7 +102,7 @@ Invoke-WebRequest -Uri "http://localhost:8000/decode?code=LeSRNl" `
   -Method Get
 ```
 
-**This will return:**
+**Along with the HTTP response, we will return:**
 ```json
 {
   "short_url":"LeSRNl",
